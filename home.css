@@ -1,0 +1,114 @@
+/* body{
+    background-image: url("vasily-koloda-8CqDvPuo_kI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+} */
+nav a:hover{
+    background-color: rgb(250, 248, 131);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+section #mods{
+    text-align: center;
+    background-color: rgb(125, 209, 248);
+    color:#fff;
+    padding: 5px;
+}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .img-about{
+        width: 100%;
+        border-radius: 50%;
+        height: 200px!important;
+  }
+
+  .about_sec{
+      margin-bottom: 15px;
+  }
+
+  .conatct_btn{
+      margin-bottom: 10px;
+  }
+
+  #animate-text{
+      color:#484848;
+      font-size: 50px;
+      font-weight: bold;
+      font-family: monospace;
+      letter-spacing: 7px;
+      cursor: pointer;
+      margin-bottom: 10px;
+  }
+
+  #animate-text span{
+    transition: .5s linear;
+  }
+
+
+#animate-text:hover span:nth-child(1){
+    margin-right: 5px
+}
+
+
+#animate-text:hover span:nth-child(1):after{
+    content: "'";
+}
+
+#animate-text:hover span:nth-child(2){
+    margin-left: 30px;
+}
+
+h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+
+.animated-text{
+    /* background-color:#fff; */
+    width: 50%;
+    height: 450px;
+    /* position: absolute; */
+    /* left:50%;
+    top:10%; */
+    text-align: justify;
+    margin:5rem;
+}
+
+@media screen and(max-width:988px){
+    .animated-text{
+            position: absolute;
+            left:30%;
+            top:10%;
+    }
+
+}
+
+@media screen and(max-width: 545px){
+    #animate-text{
+        font-size: 25px;
+    }
+    body{
+        background-color: red;
+    }
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background-color: linear-gradient(45deg,#b95ce4,#4f29cd);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover h2{
+    color:green;
+}
